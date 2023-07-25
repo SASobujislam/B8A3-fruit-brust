@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fruit-brust </title>
+    <!-- degiui kaly -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- degi UI kalyr caler rilytid styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primer': '#F85559',
+                        'primer': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .primer {
+            color: #F85559;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mx-60 my-60">
+        <div class="navbar justify-between bg-base-100 my-14 bg-primer rounded-full w-auto">
+            <div class=" text-white">
+                <a class="btn btn-ghost normal-case">Home</a>
+                <a class="btn btn-ghost normal-case">About Us</a>
+                <a class="btn btn-ghost normal-case">Shop</a>
+                <a class="btn btn-ghost normal-case">All Fruits</a>
+            </div>
+            <div>
+                <img src="images/logo.png" alt="">
+                <h2 class="font-bold text-4xl text-white">Fruit Burst</h2>
+            </div>
+            <div>
+                <div class="form-control rounded-full">
+                    <div class="input-group">
+                        <input type="text" placeholder="Search…" class="input input-bordered" />
+                        <button class="btn btn-square">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-end">
+                    <div>
+                        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    </div>
+                    </label>
+                    <ul tabindex="0"
+                        class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-full w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- hero section -->
+        <section>
+            <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn btn-primary">Get Started</button>
+                        <div class="absolute flex justify-around transform -translate-y-1/1 left-5 right-5 top-1/1">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="mt-24 flex justify-between mx-60 my-60">
+            <div>
+                <h2 class="text-2xl font-semibold md:text-4xl md:font-extrabold">Deal of the day</h2>
+                <p class="text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                    classical Latin
+                    literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="font-extrabold">
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        days
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                        </span>
+                        min
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:13;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mx-60 my-60 flex gap-6">
+            <!-- 1 card -->
+            <div class="card w-96 bg-base-100 shadow-xl space-y-12">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-6">
+                    <h2 class="card-title">12.90$ - 18.85$</h2>
+                    <hr>
+                    <h6 class="text-slate-300bg-red-300">Apples</h6>
+                    <div>
+                        <div>
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-primer mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-ghost text-primer text-lg font-bold">Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 card -->
+            <div class="card w-96 bg-base-100 shadow-xl space-y-12">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-6">
+                    <h2 class="card-title">12.90$ - 18.85$</h2>
+                    <hr>
+                    <h6 class="text-slate-300bg-red-300">Orange</h6>
+                    <div>
+                        <div>
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-primer mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-ghost text-primer text-lg font-bold">Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 card -->
+            <div class="card w-96 bg-base-100 shadow-xl space-y-12">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-6">
+                    <h2 class="card-title">12.90$ - 18.85$</h2>
+                    <hr>
+                    <h6 class="text-slate-300bg-red-300">Red Dragon</h6>
+                    <div>
+                        <div>
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-primer mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-ghost text-primer text-lg font-bold">Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 card -->
+            <div class="card w-96 bg-base-100 shadow-xl space-y-12">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center space-y-6">
+                    <h2 class="card-title">12.90$ - 18.85$</h2>
+                    <hr>
+                    <h6 class="text-slate-300bg-red-300">Banana</h6>
+                    <div>
+                        <div>
+                            <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-primer mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-primer mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-red-300 mask mask-star-2 mask-half-2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-ghost text-primer text-lg font-bold">Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
